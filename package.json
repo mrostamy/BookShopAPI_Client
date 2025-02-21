@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.8.0",
     "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.1.1",
+    "@mui/icons-material": "^6.4.5",
+    "@mui/material": "^6.4.5",
     "@reduxjs/toolkit": "^2.5.1",
     "@tanstack/react-query": "^5.66.6",
     "axios": "^1.7.9",
