@@ -11,9 +11,15 @@ import {
   Button,
 } from "@mui/material";
 import { useRef, useState } from "react";
+import * as z from 'zod'
 
 function Register() {
 
+  const validationPass=z.object({
+    password:z.string(),
+    confirm:z.string()
+  }).refine((data)=>{data.password===data.confirm},{message:"Passwords Dont Match",path:["confirm"]})
+  
   const [isChecked, setChecked] = useState(false);
 
   const [isMatch, setMatch] = useState(false);
